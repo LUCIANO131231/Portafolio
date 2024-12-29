@@ -18,4 +18,5 @@ Este portafolio está construido con las siguientes tecnologías:
 - **Google Fonts** (para tipografías personalizadas)
 
 🖼️ Capturas de Pantalla
-![alt text](image.png)
+
+![alt text](image-1.png)
