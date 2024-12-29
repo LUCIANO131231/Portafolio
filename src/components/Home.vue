@@ -6,22 +6,21 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 </script>
 
 <template>
-  <div class="font-suwannaphum bg-slate-50 min-h-full">
+  <div class="font-suwannaphum">
 
-    <div class="bg-[#0b1620] h-[50vh] flex flex-col justify-end sm:px-16 md:px-28 pb-2 relative">
+    <div class="bg-[#4B5945] h-[50vh] flex flex-col justify-end sm:px-16 md:px-28 pb-5 relative">
       <div class="text-center relative">
         <!-- Nombre y apellido -->
-        <p class="text-3xl sm:text-3xl md:text-5xl pb-2 font-bungee text-blanco-niebla tracking-widest uppercase">Luciano Estela</p>
-        <p class="text-5xl sm:text-5xl md:text-8xl font-bold text-blanco-niebla bg-[#F29F58] px-4 py-2 inline-block font-bungee tracking-tight mx-4 sm:mx-8 md:mx-auto">Renzo Paolo</p>
+        <p class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl pb-1 font-bungee text-blanco-niebla tracking-widest uppercase">Luciano Estela</p>
+        <p class="text-3xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-blanco-niebla bg-[#F29F58] px-2 py-1 inline-block font-bungee tracking-tight mx-3 whitespace-nowrap">Renzo Paolo</p><div></div>
         <!-- Linea decorativa -->
-        <div class=""></div>
-        <div class="loader h-1 w-3/4 mx-auto bg-dorado-arena mt-4 mb-10"></div>
+        <div class="loader mt-10 mb-2"></div>
       </div>
-        <!-- Informacion adicional -->
-        <h1 class="text-xl sm:text-3xl md:text-5xl text-blanco-niebla text-center font-bold -pb-64 -mb-20 tracking-wide">Desarrollador Frontend - Developer</h1>
+      <!-- Informacion adicional -->
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-blanco-niebla text-center font-bold -mb-24 tracking-wide mx-3">Desarrollador Frontend Developer</h1>
     </div>
 
-    <div class="bg-[#152238] h-[50vh] flex flex-col items-center justify-center px-8 sm:px-16 md:px-28">
+    <div class="bg-[#0b1620] h-[50vh] flex flex-col items-center justify-center px-8 sm:px-16 md:px-28">
        <span style="font-size: 28rem;" class="absolute opacity-10 bottom-96 left-20 transform -translate-x-80 sm:bottom-56 sm:left-32 md:bottom-96 md:left-44 md:-translate-x-96">
         <FontAwesomeIcon :icon="['fas', 'circle']" />
       </span>
@@ -90,7 +89,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
   height: 3px;
   display: inline-block;
   position: relative;
-  background: #736B65;
+  background: #D9C091;
   box-sizing: border-box;
   animation: animFw 4s linear infinite;
 }
@@ -100,7 +99,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
   content: '';
   width: 10px;
   height: 1px;
-  background: #736B65;
+  background: #D9C091;
   position: absolute;
   top: 9px;
   right: -2px;
