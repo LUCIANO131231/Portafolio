@@ -1,6 +1,4 @@
 <script setup lang="ts">
-
-import { faGithub, faLinkedin, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 </script>
@@ -49,7 +47,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
           target="_blank"
           rel="noopener noreferrer"
           class="animate-bounce text-black hover:text-blanco-niebla rounded-2xl bg-blanco-niebla hover:bg-black p-2 h-12">
-          <FontAwesomeIcon :icon="faGithub" size="2x" />
+          <FontAwesomeIcon :icon="['fab', 'github']" size="2x" />
         </a>
 
         <!-- LinkedIn -->
@@ -58,7 +56,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
           target="_blank"
           rel="noopener noreferrer"
           class="animate-bounce text-black hover:text-blanco-niebla rounded-2xl bg-blanco-niebla hover:bg-black p-2 h-12">
-          <FontAwesomeIcon :icon="faLinkedin" size="2x" />
+          <FontAwesomeIcon :icon="['fab', 'linkedin']" size="2x" />
         </a>
 
         <!-- Facebook -->
@@ -67,7 +65,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
           target="_blank"
           rel="noopener noreferrer"
           class="animate-bounce text-black hover:text-blanco-niebla rounded-2xl bg-blanco-niebla hover:bg-black p-2 h-12">
-          <FontAwesomeIcon :icon="faFacebook" size="2x" />
+          <FontAwesomeIcon :icon="['fab', 'facebook']" size="2x" />
         </a>
 
         <!-- Instagram -->
@@ -76,7 +74,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
           target="_blank"
           rel="noopener noreferrer"
           class="animate-bounce text-black hover:text-blanco-niebla rounded-2xl bg-blanco-niebla hover:bg-black p-2 h-12">
-          <FontAwesomeIcon :icon="faInstagram" size="2x" />
+          <FontAwesomeIcon :icon="['fab', 'instagram']" size="2x" />
         </a>
       </div>
     </div>

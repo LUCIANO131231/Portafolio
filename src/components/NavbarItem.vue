@@ -1,3 +1,26 @@
+<script setup>
+
+const props = defineProps({
+  to: { 
+    type: String, 
+    required: true 
+  },
+  icon: { 
+    type: String, 
+    required: true 
+  },
+  scale: { 
+    type: Number, 
+    default: 1 
+  },
+  label: { 
+    type: String, 
+    required: true 
+  },
+});
+
+</script>
+
 <template>
   <li class="flex flex-col items-center relative group">
     <router-link
@@ -24,12 +47,3 @@
     </span>
   </li>
 </template>
-
-<script setup>
-defineProps({
-  to: { type: String, required: true },
-  icon: { type: String, required: true },
-  scale: { type: Number, default: 1 },
-  label: { type: String, required: true },
-});
-</script>
