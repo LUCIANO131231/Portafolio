@@ -1,5 +1,21 @@
-# Vue 3 + TypeScript + Vite
+🖥️ Portafolio - Luciano Estela, Renzo Paolo
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## 🛠️ Tecnologías Usadas
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+Este portafolio está construido con las siguientes tecnologías:
+
+### Frontend
+- **Vue.js** (Composition API)
+- **Tailwind CSS** (para diseño rápido y responsivo)
+- **FontAwesome Icons** (para iconografía moderna)
+
+### Librerías
+- **Canvas Confetti** 🎉 (para animaciones interactivas)
+
+### Otras Herramientas
+- **Git & GitHub** (control de versiones y repositorios)
+- **Vite** (para desarrollo rápido y eficiente)
+- **Google Fonts** (para tipografías personalizadas)
+
+🖼️ Capturas de Pantalla
+![alt text](image.png)
