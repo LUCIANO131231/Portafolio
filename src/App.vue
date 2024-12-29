@@ -6,15 +6,15 @@ import confetti from "canvas-confetti";
 // Función para lanzar confeti desde un lado específico
 const launchConfetti = (side: "left" | "right") => {
   confetti({
-    particleCount: 80,
-    angle: side === "left" ? 120 : 60, // Ángulo según el lado
-    spread: 55, // Dispersión del confeti
-    startVelocity: 45, // Velocidad inicial
+    particleCount: 90,
+    angle: side === "left" ? 120 : 60,
+    spread: 60,
+    startVelocity: 45,
     origin: {
-      x: side === "left" ? 0.05 : 0.95, // Posición horizontal
-      y: 0.5, // Posición vertical (centro)
+      x: side === "left" ? 0.05 : 0.95,
+      y: 0.5,
     },
-    colors: ["#401722", "#262223", "#D9C091", "#736B65", "#F2F2F2"], // Colores personalizados
+    colors: ["#401722", "#262223", "#D9C091", "#736B65", "#F2F2F2"],
   });
 };
 
@@ -22,10 +22,10 @@ const launchConfetti = (side: "left" | "right") => {
 onMounted(() => {
   const interval = setInterval(() => {
     launchConfetti("left");
-    setTimeout(() => launchConfetti("right"), 1000); // Lado derecho después de 1 segundo
+    setTimeout(() => launchConfetti("right"), 1000);
   }, 2000);
 
-  // Limpieza del intervalo al desmontar el componente
+  // Limpieza del intervalo al desmontar
   onUnmounted(() => clearInterval(interval));
 });
 </script>
@@ -34,7 +34,3 @@ onMounted(() => {
   <Navbar />
   <RouterView />
 </template>
-
-<style scoped>
-/* Puedes agregar estilos si lo deseas */
-</style>

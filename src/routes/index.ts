@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "@/components/Home.vue";
 import About from "@/components/About.vue";
 import Projets from "@/components/Projects.vue";
-import CV from "@/components/Cv.vue";
+import Skills from "@/components/Skills.vue";
 
 const routes = [
   {
@@ -11,7 +11,7 @@ const routes = [
     component: Home,
   },
   {
-    path: '/about',
+    path: '/about-me',
     name: 'About',
     component: About,
   },
@@ -21,9 +21,14 @@ const routes = [
     component: Projets,
   },
   {
-    path: '/cv',
-    name: 'CV',
-    component: CV,
+    path: '/skills',
+    name: 'Skills',
+    component: Skills,
+  },
+  {
+    path: '/achievements ',
+    name: 'Achievements',
+    component: Skills,
   },
 ];
 
