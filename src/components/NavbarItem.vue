@@ -11,7 +11,7 @@ const props = defineProps({
   },
   scale: { 
     type: Number, 
-    default: 1 
+    default: 1
   },
   label: { 
     type: String, 
@@ -25,7 +25,7 @@ const props = defineProps({
   <li class="flex flex-col items-center relative group">
     <router-link
       :to="to"
-      class="flex items-center justify-center w-12 h-12 rounded-full bg-gray-100 text-gray-700 transform transition-all duration-300 ease-out hover:bg-gray-200 shadow-md"
+      class="flex items-center justify-center w-12 h-12 rounded-full bg-[#C7C8CC] hover:bg-[#B4B4B8] text-red-700 transform transition-all duration-1000 ease-in-out"
       :style="{ transform: `scale(${scale})` }">
 
       <svg
@@ -39,10 +39,9 @@ const props = defineProps({
       </svg>
     </router-link>
 
-    <span
+    <span 
       v-if="label"
-      class="absolute bottom-14 px-2 py-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
-    >
+      class="absolute bottom-16 px-2 py-1 text-sm text-center font-bungee text-dorado-arena bg-slate-50 w-24 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
       {{ label }}
     </span>
   </li>

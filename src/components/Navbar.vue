@@ -22,7 +22,10 @@ const navItems = [
   { to: "/", icon: "M3 10l9-9m0 0l9 9M4 10h16v11H4V10z", label: "Home" },
   { to: "/about-me", icon: "M5 3l14 14-7 7-7-7 7-7z", label: "About Me" },
   { to: "/projects", icon: "M13 16h-1v-4h1m-1 4h1v-4h-1m-4 4h1v-4H8v4zm4 1h1v-5h1v5h-1zm4-4h-1v-4h1v4z", label: "Projects" },
-  { to: "/cv", icon: "M9 12h6m-6 4h6M5 4h14v16H5V4z", label: "CV" }
+  { to: "/cv", icon: "M9 12h6m-6 4h6M5 4h14v16H5V4z", label: "CV" },
+  { to: "/about-4", icon: "M5 3l14 14-7 7-7-7 7-7z", label: "About Me" },
+  { to: "/project4s", icon: "M13 16h-1v-4h1m-1 4h1v-4h-1m-4 4h1v-4H8v4zm4 1h1v-5h1v5h-1zm4-4h-1v-4h1v4z", label: "Projects" },
+  { to: "/c4v", icon: "M9 12h6m-6 4h6M5 4h14v16H5V4z", label: "CV" },
 ];
 
 const hoveredIndex = ref(-1);
@@ -35,5 +38,5 @@ const handleMouseMove = (event) => {
 
 const resetHover = () => (hoveredIndex.value = -1);
 
-const getScale = (index) => hoveredIndex.value === -1 ? 1 : Math.max(1, 2 - Math.abs(index - hoveredIndex.value) * 0.5);
+const getScale = (index) => hoveredIndex.value === -1 ? 1 : Math.max(1, 1.4 - Math.abs(index - hoveredIndex.value) * 0.3);
 </script>
