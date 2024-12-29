@@ -1,14 +1,10 @@
 <template>
-  <li class="flex flex-col items-center">
+  <li class="flex flex-col items-center relative group">
     <router-link
       :to="to"
-      class="transition-all flex items-center justify-center px-4 py-2 bg-transparent text-lg font-sans hover:translate-y-[-5px] active:translate-y-[-4px]"
-      :class="{
-        ' translate-y-[-6px]': $route.path === to, // Estilos del botón activo
-        'border-transparent': $route.path !== to // Sin línea para los botones inactivos
-      }"
-    >
-      <span class="hidden sm:block">{{ label }}</span>
+      class="flex items-center justify-center w-12 h-12 rounded-full bg-gray-100 text-gray-700 transform transition-all duration-300 ease-out hover:bg-gray-200 shadow-md"
+      :style="{ transform: `scale(${scale})` }">
+
       <svg
         v-if="icon"
         xmlns="http://www.w3.org/2000/svg"
@@ -16,23 +12,24 @@
         viewBox="0 0 24 24"
         stroke-width="2"
         stroke="currentColor"
-        class="w-6 h-6 sm:hidden"
-      >
-        <path :d="icon" stroke-linecap="round" stroke-linejoin="round" />
+        class="w-6 h-6"><path :d="icon" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
     </router-link>
+
+    <span
+      v-if="label"
+      class="absolute bottom-14 px-2 py-1 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+    >
+      {{ label }}
+    </span>
   </li>
 </template>
 
 <script setup>
-import { useRoute } from "vue-router";
-
 defineProps({
-  to: { type: String, required: true }, // Ruta a la que redirige el botón
-  label: { type: String, required: true }, // Texto del botón
-  icon: { type: String, required: true }, // SVG path para el ícono
+  to: { type: String, required: true },
+  icon: { type: String, required: true },
+  scale: { type: Number, default: 1 },
+  label: { type: String, required: true },
 });
-
-// Detectar la ruta actual
-const route = useRoute();
 </script>
