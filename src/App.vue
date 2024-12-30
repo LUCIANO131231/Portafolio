@@ -9,7 +9,7 @@ onMounted(() => {
   // Oculta el preloader después de 4 segundos
   setTimeout(() => {
     showLoader.value = false;
-  }, 9000);
+  }, 4000);
 });
 
 // Función para lanzar confeti desde un lado específico

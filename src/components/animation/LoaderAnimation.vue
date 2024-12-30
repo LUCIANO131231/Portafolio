@@ -5,7 +5,7 @@ import "@/assets/styles/LoaderAnimation.css";
 </script>
 
 <template>
-  <div class="loader">
+  <div class="loader font-bungee text-5xl">
     <span>L</span>
     <span>O</span>
     <span>A</span>

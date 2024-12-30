@@ -5,23 +5,17 @@ import LaptopAnimation from '@/components/animation/LaptopAnimation.vue';
 </script>
 
 <template>
-  <div class="fixed inset-0 flex items-center justify-center bg-[#0b1620] z-50">
-    <!-- Aquí puedes poner tu animación o ícono -->
-    <div class="text-white text-4xl font-bold ">
+  <div class="fixed inset-0 flex items-center justify-center bg-[#4B5945] z-50">
+    
+    <div class="text-white text-4xl font-bold mt-40">
       <LoaderAnimation />    
     </div>
 
-    <SpiderAnimation />
+      <SpiderAnimation />
 
-    <LaptopAnimation />
+    <!-- <div class="absolute bottom-56 right-64">
+      <LaptopAnimation />
+    </div> -->
 
   </div>
 </template>
-
-<script setup>
-</script>
-
-<style scoped>
-
-
-</style>

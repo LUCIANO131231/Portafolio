@@ -1,4 +1,4 @@
-/* estilo de spider de uiverse */ 
+/* estilo de spider de uiverse */
 
 .center {
   position: absolute;
@@ -15,7 +15,7 @@
 .rope {
   height: 13.62em;
   width: 0.15em;
-  background-color: #ffffff;
+  background-color: #fff;
   animation: swing 2s infinite;
 }
 
@@ -34,11 +34,10 @@
   border-radius: 3.12em;
 }
 
-.boot-l,
-.boot-r {
+.boot-l, .boot-r {
   height: 1.25em;
   width: 2.5em;
-  background-color: #e32832;
+  background-color: #B8001F;
   position: absolute;
   border: 0.12em solid #140243;
   bottom: 1.12em;
@@ -53,25 +52,23 @@
   left: 3.81em;
 }
 
-.boot-l:before,
-.boot-r:before {
+.boot-l:before, .boot-r:before {
   content: "";
   position: absolute;
   width: 0;
   height: 0;
   border-bottom: 1.12em solid #140243;
-  border-left: 1.18em solid transparent;
+  border-left: 1.18 solid transparent;
   bottom: 1.31em;
   left: 1.46em;
 }
 
-.boot-l:after,
-.boot-r:after {
+.boot-l:after, .boot-r:after {
   content: "";
   position: absolute;
   width: 0;
   height: 0;
-  border-bottom: 1.12em solid #e32832;
+  border-bottom: 1.12em solid #B8001F;
   border-left: 1em solid transparent;
   right: 0;
   top: -0.93em;
@@ -83,8 +80,8 @@
   background: linear-gradient(
     to right,
     #1b1676 20%,
-    #e32832 20%,
-    #e32832 80%,
+    #B8001F 20%,
+    #B8001F 80%,
     #1b1676 80%
   );
   border: 0.12em solid #140243;
@@ -102,8 +99,7 @@
   left: 50%;
 }
 
-.s1,
-.s3 {
+.s1, .s3 {
   height: 7.5em;
   width: 2.5em;
   border-radius: 0 0 1.37em 1.37em;
@@ -111,8 +107,7 @@
   position: absolute;
 }
 
-.s2,
-.s4 {
+.s2, .s4 {
   height: 7.5em;
   width: 3.12em;
   border-radius: 0 0 1.56em 1.56em;
@@ -120,10 +115,7 @@
   position: absolute;
 }
 
-.s1,
-.s2,
-.s3,
-.s4 {
+.s1, .s2, .s3, .s4 {
   left: 50%;
 }
 
@@ -135,8 +127,7 @@
   bottom: 0.93em;
 }
 
-.s3,
-.s4 {
+.s3, .s4 {
   transform: translateX(-50%) rotateX(180deg);
 }
 
@@ -151,16 +142,15 @@
 .belt {
   height: 0.43em;
   width: 5.87em;
-  background-color: #e32832;
+  background-color: #B8001F;
   border: 0.12em solid #140243;
   top: -0.12em;
 }
 
-.hand-r,
-.hand-l {
+.hand-r, .hand-l {
   height: 8.12em;
   background: linear-gradient(
-    #e32832 4.6em,
+    #B8001F 4.6em,
     #140243 4.6em,
     #140243 4.75em,
     #1b1676 4.75em,
@@ -187,7 +177,7 @@
 .neck {
   height: 0.37em;
   width: 1.25em;
-  background-color: #e32832;
+  background-color: #B8001F;
   bottom: -0.62em;
   border: 0.12em solid #140243;
 }
@@ -195,14 +185,13 @@
 .mask {
   height: 4.65em;
   width: 4.06em;
-  background-color: #e32832;
+  background-color: #B8001F;
   border-radius: 50% 50% 50% 50% / 54% 54% 46% 46%;
   border: 0.12em solid #140243;
   top: 6.56em;
 }
 
-.eye-l,
-.eye-r {
+.eye-l, .eye-r {
   height: 0.68em;
   width: 1.37em;
   background-color: #ffffff;
