@@ -22,4 +22,8 @@ Este portafolio está construido con las siguientes tecnologías:
 
 🖼️ Capturas de Pantalla
 
+- **Pre carga**
+![alt text](image.png)
+
+- **Portafolio**
 ![alt text](image-1.png)
