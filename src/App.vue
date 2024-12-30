@@ -1,7 +1,16 @@
 <script setup lang="ts">
 import Navbar from "@/components/Navbar.vue";
-import { onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 import confetti from "canvas-confetti";
+import Loader from "@/components/Loading.vue";
+
+const showLoader = ref(true);
+onMounted(() => {
+  // Oculta el preloader después de 4 segundos
+  setTimeout(() => {
+    showLoader.value = false;
+  }, 9000);
+});
 
 // Función para lanzar confeti desde un lado específico
 const launchConfetti = (side: "left" | "right") => {
@@ -31,6 +40,7 @@ onMounted(() => {
 </script>
 
 <template>
+  <Loader v-if="showLoader" />
   <Navbar />
   <RouterView />
 </template>
