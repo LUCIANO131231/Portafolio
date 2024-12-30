@@ -1,6 +1,6 @@
 🖥️ Portafolio - Luciano Estela, Renzo Paolo
 
-## 🛠️ Tecnologías Usadas
+## 🛠️ Tecnologías usadas
 
 Este portafolio está construido con las siguientes tecnologías:
 
@@ -12,7 +12,10 @@ Este portafolio está construido con las siguientes tecnologías:
 ### Librerías
 - **Canvas Confetti** 🎉 (para animaciones interactivas)
 
-### Otras Herramientas
+### Recursos de diseño
+- **UIverse** (componentes visuales preconstruidos para animaciones y estilos)
+
+### Otras herramientas
 - **Git & GitHub** (control de versiones y repositorios)
 - **Vite** (para desarrollo rápido y eficiente)
 - **Google Fonts** (para tipografías personalizadas)
