@@ -22,14 +22,14 @@ const props = defineProps({
   <div class="card mx-10">
     <!-- imagenes -->
     <div class="flex mb-4 justify-center">
-      <img class="w-full max-w-[600px] sm:w-[450px] h-auto object-contain rounded-md" :src="certificate" alt="Certificate">
+      <img class="w-full max-w-[600px] sm:w-[360px] h-auto object-contain rounded-md" :src="certificate" alt="Certificate">
     </div>
     <!-- titulo -->
-    <span class="block font-bungee text-negro-oxido text-lg text-center sm:text-xl uppercase mb-4 relative overflow-hidden glitch">{{titulo}}</span>
+    <span class="block font-suwannaphum text-[#131010] text-lg text-center sm:text-xl uppercase mb-4 relative overflow-hidden glitch">{{titulo}}</span>
     <!-- descripcion -->
-    <p class="font-suwannaphum text-[#3C3D37] mb-4 max-w-[460px] sm:text-lg  text-justify">{{descripcion}}</p>
+    <p class="font-suwannaphum text-[#1A1A19] mb-4 max-w-[460px] sm:text-lg  text-justify">{{descripcion}}</p>
     <!-- icono animacion -->
-    <div class="decor text-black hover:text-white bg-white hover:bg-black uppercase">
+    <div class="decor text-black hover:text-white bg-[#86A788] hover:bg-black uppercase">
       <FontAwesomeIcon :icon="['fas', 'trophy']" size="2x"/>
     </div>
 
@@ -39,12 +39,12 @@ const props = defineProps({
 <style scoped>
 
 .card {
-  width: auto;
+  width: 400px;
   max-width: 100%;
   padding: 20px;
   background: #fff;
   border: 8px solid #000;
-  box-shadow: 15px 15px 0 #000;
+  box-shadow: 14px 14px 0 #000;
   position: relative; /* para la etiqueta */
   transition: transform 0.8s, box-shadow 0.8s;
 }

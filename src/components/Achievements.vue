@@ -41,7 +41,7 @@ const certificates = [
 
 <template>
   <div class="bg-[#4B5945] min-h-screen flex justify-center items-center">
-    <div class="grid grid-cols-2 gap-8">
+    <div class="grid grid-cols-2 gap-16">
       <AchievementsItem
         v-for="certif in certificates"
         :certificate="certif.certificate"
