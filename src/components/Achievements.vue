@@ -4,7 +4,7 @@ import Certificate2 from "@/assets/images/certificado-002.jpg";
 import Certificate3 from "@/assets/images/certificado-003.jpg";
 import Certificate4 from "@/assets/images/certificado-004.jpg";
 import AchievementsItem from "./AchievementsItem.vue";
-
+import ColorHeader from "./animation/ColorHeader.vue";
 const certificates = [
   {
     certificate: Certificate1,
@@ -41,6 +41,7 @@ const certificates = [
 
 <template>
   <div class="bg-[#4B5945] min-h-screen flex justify-center items-center">
+    <ColorHeader />
     <div class="grid grid-cols-2 gap-16">
       <AchievementsItem
         v-for="certif in certificates"
