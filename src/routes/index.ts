@@ -3,6 +3,7 @@ import Home from "@/components/Home.vue";
 import About from "@/components/About.vue";
 import Projets from "@/components/Projects.vue";
 import Skills from "@/components/Skills.vue";
+import Achievements from "@/components/Achievements.vue";
 
 const routes = [
   {
@@ -26,9 +27,9 @@ const routes = [
     component: Skills,
   },
   {
-    path: '/achievements ',
+    path: '/achievements',
     name: 'Achievements',
-    component: Skills,
+    component: Achievements,
   },
 ];
 
