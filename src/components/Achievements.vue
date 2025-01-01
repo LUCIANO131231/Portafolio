@@ -3,6 +3,7 @@ import Certificate1 from "@/assets/images/certificado-001.jpg";
 import Certificate2 from "@/assets/images/certificado-002.jpg";
 import Certificate3 from "@/assets/images/certificado-003.jpg";
 import Certificate4 from "@/assets/images/certificado-004.jpg";
+import Certificate5 from "@/assets/images/certificado-005.jpg";
 import AchievementsItem from "./AchievementsItem.vue";
 import ColorHeader from "./animation/ColorHeader.vue";
 const certificates = [
@@ -26,11 +27,11 @@ const certificates = [
     titulo: "Introduction to Data Science",
     descripcion: "Habilidades en análisis de datos, machine learning y fundamentos de ciencia de datos.",
   },
-  // {
-  //   certificate: Certificate,
-  //   titulo: "Diseño Web con HTML5 + CSS",
-  //   descripcion: "Certificado obtenida por completar el curso, un programa de formación digital con una duración de 30 horas.",
-  // },
+  {
+    certificate: Certificate5,
+    titulo: "Cybersecurity Awareness",
+    descripcion: "Certificación en prácticas profesionales de concienciación y seguridad cibernética.",
+  },
   // {
   //   certificate: Certificate,
   //   titulo: "Diseño Web con HTML5 + CSS",
