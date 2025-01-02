@@ -41,7 +41,7 @@ const certificates = [
 </script>
 
 <template>
-  <div class="bg-[#4B5945] min-h-screen flex justify-center items-center">
+  <div class="bg-[#0b1620] min-h-screen flex justify-center items-center">
     <ColorHeader />
     <div class="grid grid-cols-2 gap-16">
       <AchievementsItem
