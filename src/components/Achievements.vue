@@ -43,7 +43,7 @@ const certificates = [
 <template>
   <div class="bg-[#0b1620] min-h-screen flex justify-center items-center">
     <ColorHeader />
-    <div class="grid grid-cols-2 gap-16">
+    <div class="grid grid-cols-2 gap-16 custom-scroll overflow-y-auto">
       <AchievementsItem
         v-for="certif in certificates"
         :certificate="certif.certificate"
@@ -53,3 +53,10 @@ const certificates = [
     </div>    
   </div>
 </template>
+
+<style scoped>
+
+
+
+
+</style>
