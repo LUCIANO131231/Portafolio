@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="relative bg-transparent right-40">
+  <div class="relative bg-transparent mb-6">
     
     <!-- Líneas -->
     <div class="space-y-4">

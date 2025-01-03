@@ -4,8 +4,10 @@ import Certificate2 from "@/assets/images/certificado-002.jpg";
 import Certificate3 from "@/assets/images/certificado-003.jpg";
 import Certificate4 from "@/assets/images/certificado-004.jpg";
 import Certificate5 from "@/assets/images/certificado-005.jpg";
+import Certificate6 from "@/assets/images/certificado-006.jpg";
 import AchievementsItem from "./AchievementsItem.vue";
 import ColorHeader from "./animation/ColorHeader.vue";
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 const certificates = [
   {
     certificate: Certificate1,
@@ -32,18 +34,21 @@ const certificates = [
     titulo: "Cybersecurity Awareness",
     descripcion: "Certificación en prácticas profesionales de concienciación y seguridad cibernética.",
   },
-  // {
-  //   certificate: Certificate,
-  //   titulo: "Diseño Web con HTML5 + CSS",
-  //   descripcion: "Certificado obtenida por completar el curso, un programa de formación digital con una duración de 30 horas.",
-  // },
+  {
+    certificate: Certificate6,
+    titulo: "Business Model Canvas Essentials",
+    descripcion: "Certificación en conocimientos fundamentales sobre el modelo de negocios y proyectos empresariales.",
+  },
 ]
 </script>
 
 <template>
   <div class="bg-[#0b1620] min-h-screen flex justify-center items-center">
     <ColorHeader />
-    <div class="grid grid-cols-2 gap-16 custom-scroll overflow-y-auto">
+    <span style="font-size: 28rem;" class="absolute opacity-10 bottom-96 left-20 transform -translate-x-80 sm:bottom-96 sm:left-44 md:bottom-96 md:left-44 md:-translate-x-96">
+      <FontAwesomeIcon :icon="['fas', 'circle']" />
+    </span>
+    <div class="grid grid-cols-2 gap-12 custom-scroll overflow-y-auto">
       <AchievementsItem
         v-for="certif in certificates"
         :certificate="certif.certificate"
@@ -53,10 +58,3 @@ const certificates = [
     </div>    
   </div>
 </template>
-
-<style scoped>
-
-
-
-
-</style>

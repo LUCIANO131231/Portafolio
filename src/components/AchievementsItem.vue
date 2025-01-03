@@ -19,9 +19,9 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="card mx-10">
+  <div class="card mx-2 my-9 ms-44">
     <!-- imagenes -->
-    <div class="flex mb-4 justify-center">
+    <div class="flex mb-3 justify-center">
       <div class="overflow-hidden rounded-md">
         <img
           class="w-full max-w-[600px] sm:w-[280px] border border-[#D6CFB4] h-auto object-contain rounded-md transition-transform duration-300 hover:scale-110"
@@ -32,9 +32,9 @@ const props = defineProps({
     </div>
     <hr><br>
     <!-- titulo -->
-    <span class="block font-suwannaphum text-[#131010] text-sm text-center sm:text-lg uppercase mb-4 relative overflow-hidden glitch">{{titulo}}</span>
+    <span class="block font-suwannaphum text-[#131010] text-sm text-center sm:text-base uppercase mb-3 relative overflow-hidden">{{titulo}}</span><hr><br>
     <!-- descripcion -->
-    <p class="font-suwannaphum text-[#1A1A19] mb-4 max-w-[460px] sm:text-base  text-justify">{{descripcion}}</p>
+    <p class="font-suwannaphum text-[#1A1A19] mb-10 max-w-[460px] sm:text-base text-justify">{{descripcion}}</p>
     <!-- icono animacion -->
     <div class="decor text-black hover:text-black bg-[#D6CFB4] hover:bg-white uppercase">
       <FontAwesomeIcon :icon="['fas', 'trophy']" size="2x"/>
