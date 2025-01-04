@@ -10,31 +10,37 @@ import ColorHeader from "./animation/ColorHeader.vue";
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 const certificates = [
   {
+    institute: "Telefonica Movistar",
     certificate: Certificate1,
     titulo: "Diseño Web con HTML5 + CSS",
     descripcion: "Competencias avanzadas en desarrollo web con HTML5 y CSS.",
   },
   {
+    institute: "Linkedin Learning",
     certificate: Certificate2,
     titulo: "IA Generativa",
     descripcion: "Dominio de conceptos clave en inteligencia artificial generativa.",
   },
   {
+    institute: "Certiprof",
     certificate: Certificate3,
     titulo: "Scrum Foundation",
     descripcion: "Certificación en fundamentos de Scrum y prácticas ágiles efectivas.",
   },
   {
+    institute: "Cisco Networking Academy",
     certificate: Certificate4,
     titulo: "Introduction to Data Science",
     descripcion: "Habilidades en análisis de datos, machine learning y fundamentos de ciencia de datos.",
   },
   {
+    institute: "Certiprof",
     certificate: Certificate5,
     titulo: "Cybersecurity Awareness",
     descripcion: "Certificación en prácticas profesionales de concienciación y seguridad cibernética.",
   },
   {
+    institute: "Certiprof",
     certificate: Certificate6,
     titulo: "Business Model Canvas Essentials",
     descripcion: "Certificación en conocimientos fundamentales sobre el modelo de negocios y proyectos empresariales.",
@@ -43,18 +49,42 @@ const certificates = [
 </script>
 
 <template>
-  <div class="bg-[#0b1620] min-h-screen flex justify-center items-center">
+  <div class="bg-[#4B5945] min-h-screen flex justify-center items-center">
     <ColorHeader />
-    <span style="font-size: 28rem;" class="absolute opacity-10 bottom-96 left-20 transform -translate-x-80 sm:bottom-96 sm:left-44 md:bottom-96 md:left-44 md:-translate-x-96">
+    <span style="font-size: 28rem;" class="absolute opacity-10 bottom-80 left-16 transform -translate-x-80 sm:bottom-80 sm:left-16 md:bottom-80 md:left-16 md:-translate-x-80">
       <FontAwesomeIcon :icon="['fas', 'circle']" />
     </span>
     <div class="grid grid-cols-2 gap-12 custom-scroll overflow-y-auto">
       <AchievementsItem
         v-for="certif in certificates"
+        :institute="certif.institute"
         :certificate="certif.certificate"
         :titulo="certif.titulo"
         :descripcion="certif.descripcion"
       />
-    </div>    
+    </div>  
   </div>
 </template>
+
+<style>
+/* Estilos del scrollbar */
+.custom-scroll {
+  overflow-y: auto;
+  max-height: 77vh;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+  background-color: #D9C091;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  background-color: #0e8bff;
+}
+</style>
