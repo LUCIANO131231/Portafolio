@@ -1,7 +1,10 @@
 <script lang="ts" setup>
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 const props = defineProps({
+  institute: {
+    type: String,
+    required: true
+  },
   certificate: {
     type: String,
     required: true
@@ -19,9 +22,9 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="card mx-2 my-9 ms-44">
-    <!-- imagenes -->
-    <div class="flex mb-3 justify-center">
+  <div class="group mx-8 my-3 relative w-[300px] h-[500px] p-0 bg-slate-50 hover:bg-[#9CA986] rounded-lg transition-all duration-300 flex items-center justify-center overflow-hidden">
+    <!-- imagenes-->
+    <!-- <div class="flex mb-3 justify-center">
       <div class="overflow-hidden rounded-md">
         <img
           class="w-full max-w-[600px] sm:w-[280px] border border-[#D6CFB4] h-auto object-contain rounded-md transition-transform duration-300 hover:scale-110"
@@ -29,50 +32,25 @@ const props = defineProps({
           alt="Certificate"
         />
       </div>
+    </div> -->
+    <div class="text-center font-suwannaphum font-medium px-2 w-full">
+      <!-- institute -->
+      <div class="text-left px-3 text-black group-hover:text-white relative">
+        <span class="block text-xs lg:text-sm uppercase mb-3 overflow-hidden">{{institute}}</span>
+      </div>
+      <!-- titulo -->
+      <div class="text-left px-5 mb-3 text-black group-hover:text-white relative">
+        <span class="block text-sm lg:text-3xl uppercase overflow-hidden">{{titulo}}</span>
+      </div>
+      <!-- descripcion -->
+      <div class="px-6 text-left mb-1">
+        <p class="text-black group-hover:text-white max-w-[460px] lg:text-sm">{{descripcion}}</p>
+      </div>
     </div>
-    <hr><br>
-    <!-- titulo -->
-    <span class="block font-suwannaphum text-[#131010] text-sm text-center sm:text-base uppercase mb-3 relative overflow-hidden">{{titulo}}</span><hr><br>
-    <!-- descripcion -->
-    <p class="font-suwannaphum text-[#1A1A19] mb-10 max-w-[460px] sm:text-base text-justify">{{descripcion}}</p>
-    <!-- icono animacion -->
-    <div class="decor text-black hover:text-black bg-[#D6CFB4] hover:bg-white uppercase">
-      <FontAwesomeIcon :icon="['fas', 'trophy']" size="2x"/>
-    </div>
-
   </div>
 </template>
 
 <style scoped>
-
-.card {
-  width: 340px;
-  max-width: 100%;
-  padding: 20px;
-  background: #fff;
-  box-shadow: 20px 20px 0 #D6CFB4;
-  position: relative; /* para la etiqueta */
-  transition: transform 0.8s, box-shadow 0.8s;
-}
-
-.card:hover {
-  transform: translate(-5px, -5px);
-  box-shadow: 12px 12px 0 #D6CFB4;
-}
-
-.decor {
-  position: absolute;
-  bottom: -10px;
-  right: -10px;
-  padding: 5px 10px;
-  transform: rotate(-1deg);
-  transition: transform 0.3s;
-}
-
-.card:hover .decor {
-  transform: rotate(1deg) scale(1);
-}
-
 @keyframes glitch {
   0% {
     transform: translate(2px, 2px);
