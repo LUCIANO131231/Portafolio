@@ -31,19 +31,19 @@ const certificates = [
     institute: "Cisco Networking Academy",
     certificate: Certificate4,
     titulo: "Introduction to Data Science",
-    descripcion: "Habilidades en análisis de datos, machine learning y fundamentos de ciencia de datos.",
+    descripcion: "Habilidades en análisis de datos, machine learning y ciencia de datos.",
   },
   {
     institute: "Certiprof",
     certificate: Certificate5,
     titulo: "Cybersecurity Awareness",
-    descripcion: "Certificación en prácticas profesionales de concienciación y seguridad cibernética.",
+    descripcion: "Prácticas profesionales de concienciación y seguridad cibernética.",
   },
   {
     institute: "Certiprof",
     certificate: Certificate6,
     titulo: "Business Model Canvas Essentials",
-    descripcion: "Certificación en conocimientos fundamentales sobre el modelo de negocios y proyectos empresariales.",
+    descripcion: "Conocimientos sobre el modelo de negocios y proyectos empresariales.",
   },
 ]
 </script>
@@ -51,9 +51,21 @@ const certificates = [
 <template>
   <div class="bg-[#4B5945] min-h-screen flex justify-center items-center">
     <ColorHeader />
-    <span style="font-size: 28rem;" class="absolute opacity-10 bottom-80 left-16 transform -translate-x-80 sm:bottom-80 sm:left-16 md:bottom-80 md:left-16 md:-translate-x-80">
-      <FontAwesomeIcon :icon="['fas', 'circle']" />
+
+    <!-- circulo izquierda -->
+    <span
+      style="font-size: 20rem;"
+      class="absolute opacity-10 -bottom-0 -left-[1900px]">
+      <FontAwesomeIcon :icon="['fas', 'circle']" size="10x" />
     </span>
+    <!-- circulo derecha -->
+    <span
+      style="font-size: 20rem;"
+      class="absolute opacity-10 bottom-0 right-10">
+      <FontAwesomeIcon :icon="['fas', 'star']" size="10x" />
+    </span>
+
+
     <div class="grid grid-cols-2 gap-12 custom-scroll overflow-y-auto">
       <AchievementsItem
         v-for="certif in certificates"
