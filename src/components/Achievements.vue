@@ -74,8 +74,8 @@ const certificates = [
 }
 
 .custom-scroll::-webkit-scrollbar {
-  width: 6px;
-  background-color: #D9C091;
+  width: 4px;
+  background-color: #fff;
 }
 
 .custom-scroll::-webkit-scrollbar-track {
@@ -85,6 +85,6 @@ const certificates = [
 
 .custom-scroll::-webkit-scrollbar-thumb {
   border-radius: 1px;
-  background-color: #0e8bff;
+  background-color: #747264;
 }
 </style>

@@ -20,9 +20,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
     </div>
 
     <div class="bg-[#0b1620] h-[50vh] flex flex-col items-center justify-center px-8 sm:px-16 md:px-28">
-       <span style="font-size: 28rem;" class="absolute opacity-10 bottom-96 left-20 transform -translate-x-80 sm:bottom-56 sm:left-32 md:bottom-96 md:left-44 md:-translate-x-96">
-        <FontAwesomeIcon :icon="['fas', 'circle']" />
-      </span>
+    <span style="font-size: 28rem;" class="absolute opacity-10 bottom-80 left-16 transform -translate-x-80 sm:bottom-80 sm:left-16 md:bottom-80 md:left-16 md:-translate-x-80">
+      <FontAwesomeIcon :icon="['fas', 'circle']" />
+    </span>
       <!-- Iconos -->
       <div class="absolute inset-0 opacity-10 flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-10">
         <!--<div class="absolute top-80 -rotate-90 right-10 space-x-4">
