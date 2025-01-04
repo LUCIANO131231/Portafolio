@@ -50,23 +50,23 @@ const certificates = [
 
 <template>
   <div class="bg-[#4B5945] min-h-screen flex justify-center items-center">
-    <ColorHeader />
+    <!-- <ColorHeader class="mx-24"/> mx-36-->
 
     <!-- circulo izquierda -->
-    <span
+    <!-- <span
       style="font-size: 20rem;"
       class="absolute opacity-10 -bottom-0 -left-[1900px]">
       <FontAwesomeIcon :icon="['fas', 'circle']" size="10x" />
-    </span>
+    </span> -->
     <!-- circulo derecha -->
-    <span
+    <!-- <span
       style="font-size: 20rem;"
       class="absolute opacity-10 bottom-0 right-10">
       <FontAwesomeIcon :icon="['fas', 'star']" size="10x" />
-    </span>
+    </span> -->
 
 
-    <div class="grid grid-cols-2 gap-12 custom-scroll overflow-y-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 custom-scroll overflow-y-auto">
       <AchievementsItem
         v-for="certif in certificates"
         :institute="certif.institute"

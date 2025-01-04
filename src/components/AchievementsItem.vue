@@ -24,11 +24,11 @@ const props = defineProps({
 
 <template>
   <!-- Card -->
-  <div class="group mx-8 my-3 w-[300px] h-[500px] relative p-0 bg-slate-50 hover:bg-slate-100 rounded-lg transition-all duration-300 flex items-center justify-center overflow-hidden">
+  <div class="group mx-8 my-3 w-[205px] h-[500px] sm:w-[200px] sm:h-[500px] lg:w-[300px] lg:h-[500px] relative p-0 bg-slate-50 hover:bg-slate-100 rounded-lg transition-all duration-300 flex items-center justify-center overflow-hidden">
     <!-- imagenes-->
     <div class="absolute inset-0 flex items-center opacity-10 justify-center transition-opacity duration-300">
       <img
-        class="h-auto object-contain w-[285px] translate-y-[-115px] rounded-lg"
+        class="object-contain  w-[195px] h-[500px] sm:w-[190px] sm:h-[500px] lg:w-[280px] lg:h-[500px] translate-y-[-115px] rounded-lg"
         :src="certificate"
         alt="Certificate"
       />
@@ -37,17 +37,17 @@ const props = defineProps({
     <div class="text-center font-press font-medium px-2 w-full relative mt-[95px]">
 
       <!-- institute -->
-      <div class="text-left px-3 mb-4 text-xs group-hover:text-white text-white">
+      <div class="text-left px-3 mb-4 text-xs sm:text-xs lg:text-xs group-hover:text-white text-white">
         <span class="inline-block px-2 py-1 bg-gray-500 rounded-lg tracking-wide uppercase overflow-hidden">{{institute}}</span>
       </div>
 
       <!-- titulo -->
-      <div class="text-left px-5 mb-6 text-3xl group-hover:text-gray-700 text-black">
+      <div class="text-left px-5 mb-6 text-xl sm:text-2xl lg:text-3xl group-hover:text-gray-700 text-black">
         <span class="block uppercase overflow-hidden">{{titulo}}</span>
       </div>
       
       <!-- descripcion -->
-      <div class="px-6 text-left text-sm group-hover:text-gray-700 text-black">
+      <div class="px-6 text-left text-sm sm:text-sm lg:text-sm group-hover:text-gray-700 text-black">
         <p class="overflow-hidden">{{descripcion}}</p>
       </div>
 
@@ -56,7 +56,8 @@ const props = defineProps({
         :href="certificate"
         target="_blank"
         rel="noopener noreferrer"
-        class="block mx-24 mt-6 text-white px-9 py-2 bg-gray-600 hover:bg-gray-500 text-md rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center"> Ver
+        class="block mx-auto mt-6 text-white px-6 sm:px-8 lg:px-9 py-2 bg-gray-600 hover:bg-gray-500 text-sm sm:text-md lg:text-md rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+        Ver
       </a>
 
     </div>
