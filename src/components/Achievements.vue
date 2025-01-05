@@ -50,20 +50,20 @@ const certificates = [
 
 <template>
   <div class="bg-[#4B5945] min-h-screen flex justify-center items-center">
-    <!-- <ColorHeader class="mx-24"/> mx-36-->
+    <!-- <ColorHeader /> -->
 
     <!-- circulo izquierda -->
-    <!-- <span
+    <span
       style="font-size: 20rem;"
       class="absolute opacity-10 -bottom-0 -left-[1900px]">
-      <FontAwesomeIcon :icon="['fas', 'circle']" size="10x" />
-    </span> -->
+      <FontAwesomeIcon :icon="['fas', 'circle']" size="7x" />
+    </span>
     <!-- circulo derecha -->
-    <!-- <span
+    <span
       style="font-size: 20rem;"
       class="absolute opacity-10 bottom-0 right-10">
-      <FontAwesomeIcon :icon="['fas', 'star']" size="10x" />
-    </span> -->
+      <FontAwesomeIcon :icon="['fas', 'star']" size="7x" />
+    </span>
 
 
     <div class="grid grid-cols-1 sm:grid-cols-2 custom-scroll overflow-y-auto">

@@ -24,7 +24,7 @@ const props = defineProps({
 
 <template>
   <!-- Card -->
-  <div class="group mx-8 my-3 w-[205px] h-[500px] sm:w-[200px] sm:h-[500px] lg:w-[300px] lg:h-[500px] relative p-0 bg-slate-50 hover:bg-slate-100 rounded-lg transition-all duration-300 flex items-center justify-center overflow-hidden">
+  <div class="group mx-4 my-5 w-[235px] h-[500px] sm:w-[270px] sm:h-[500px] lg:w-[300px] lg:h-[500px] relative p-0 bg-slate-50 hover:bg-slate-100 rounded-lg transition-all duration-300 flex items-center justify-center overflow-hidden">
     <!-- imagenes-->
     <div class="absolute inset-0 flex items-center opacity-10 justify-center transition-opacity duration-300">
       <img
@@ -56,7 +56,7 @@ const props = defineProps({
         :href="certificate"
         target="_blank"
         rel="noopener noreferrer"
-        class="block mx-auto mt-6 text-white px-6 sm:px-8 lg:px-9 py-2 bg-gray-600 hover:bg-gray-500 text-sm sm:text-md lg:text-md rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+        class="block mx-auto mt-6 text-white w-24 sm:w-24 lg:w-24 py-2 bg-gray-600 hover:bg-gray-500 text-sm sm:text-md lg:text-md rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
         Ver
       </a>
 

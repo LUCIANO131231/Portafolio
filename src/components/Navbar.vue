@@ -24,7 +24,7 @@ const getScale = (index) => hoveredIndex.value === -1 ? 1 : Math.max(1, 1.4 - Ma
 </script>
 
 <template>
-  <nav class="fixed z-10 bottom-5 left-1/2 transform -translate-x-1/2 bg-blanco-niebla rounded-full shadow-xl w-[70%] max-w-xl py-1 px-6 flex items-center justify-center">
+  <nav class="fixed z-10 bottom-6 sm:bottom-5 lg:bottom-5 left-1/2 sm:left-1/2 lg:left-1/2 transform -translate-x-1/2 bg-slate-200 rounded-full shadow-xl max-w-3xl w-[90%] sm:w-[60%] lg:w-[70%] py-1 px-4 flex items-center justify-center">
     <ul
       class="flex justify-between items-center gap-4 w-full relative"
       @mousemove="handleMouseMove"
